@@ -7,21 +7,30 @@ body{
     font-family: 'Ubuntu', sans-serif;
     font-family: 'Varela Round', sans-serif;
 }
-nav{
+.nav{
     display: flex;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-top: 5px;
+    background-color: black;
+    color: white;
+    margin: 0;
 }
+
+.spotify{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
 .navright ul li{
     list-style: none;
    
 }
 
 .navright ul li a{
-    color: black;
+    color: white;
     text-decoration: none;
-    margin: 15px;
+    margin-left: 45px;
 }
 
 .logo{
@@ -29,12 +38,26 @@ nav{
     width: 100px;
 }
 .navleft{
-    margin-left: 20px;
+    margin-left: 110px;
+    display: flex;
 }
 
 .navright{
     display: flex;
     /* justify-content: center; */
     align-items: center;
-    margin-left: 900px;
+    margin-left: 650px;
+}
+.container{
+    min-height: 50vh;
+}
+.bottom{
+    background-color: black;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.range{
+    
 }

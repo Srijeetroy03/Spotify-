@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,21 +9,41 @@
     <link rel="stylesheet" href="CSS/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&family=Varela+Round&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
+
 <body>
-    <nav>
+    <!-- navbar -->
+    <div class="nav">
         <div class="navleft">
-            <a href="main.html"><img class="logo" src="Images/main_logo.png" alt="" srcset="">Spotify</a>
+            <a href="main.html" class="spot_logo"><img class="logo" src="Images/main_logo.png" alt="" srcset=""></a>
+            <a href="#" class="spotify">Spotify</a>
         </div>
         <div class="navright">
-            <ul>
-                <li>
-                    <a href="#">Home</a>
-                    <a href="#">Contact</a>
-                </li>
-            </ul>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-    </nav>
+    </div>
+ 
+    <!-- main body -->
+    <div class="container">
+        <h1>Best of Arijit Singh. No copyright songs</h1>
+        <div class="songList"></div>
+        <div class="songname"></div>
+    </div>
+    <div class="bottom">
+        <input type="range" name="range" min="0" max="100" id="range">
+        <i class="fa-solid fa-play" style="color: #fafbff;"></i>
+    </div>
 </body>
+
 </html>
