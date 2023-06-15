@@ -34,8 +34,8 @@ body{
 }
 
 .logo{
-    height: 55px;
-    width: 100px;
+    height: 50px;
+    width: 95px;
 }
 .navleft{
     margin-left: 110px;
@@ -49,15 +49,35 @@ body{
     margin-left: 650px;
 }
 .container{
-    min-height: 50vh;
+    min-height: 380px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: 35px 135px;
+    /* margin-bottom: 10px; */
+    margin-bottom: 50px;
 }
 .bottom{
     background-color: black;
-    height: 130px;
+    height: 100px;
+    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.range{
     
+}
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:-70px ;
+    color: white;
+    cursor: pointer;
+}
+
+
+#range{
+    width: 500px;
+    margin-top: 45px;
 }
