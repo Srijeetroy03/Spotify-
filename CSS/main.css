@@ -81,6 +81,18 @@ body{
 }
 .utility{
     margin-top: 20px;
+    background-color: rgb(65, 64, 64);
+    /* background-color: #828282; */
+    border-radius: 10px;
+    height: 100px;
+    width: 370px;
+    margin-left: 10px;
+}
+.feather-home{
+    margin-bottom: -5px;
+}
+.feather-search{
+    margin-bottom: -7px;
 }
 .utility a{
     color: antiquewhite;
@@ -90,6 +102,27 @@ body{
 }
 .search{
     margin-top: 10px;
+}
+.library{
+    margin-top: 20px;
+    background-color: rgb(65, 64, 64);
+    /* background-color: #828282; */
+    border-radius: 10px;
+    height: 50px;
+    width: 370px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+.lib{
+    color: antiquewhite;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: bold;
+}
+.bi-music-note-list{
+    margin-bottom: -4px;
+
 }
 .container{
     background-color: antiquewhite;
