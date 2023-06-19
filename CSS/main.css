@@ -66,8 +66,9 @@ body{
 }
 
 .logo{
-    height: 50px;
-    width: 95px;
+    width: 47px;
+    cursor: pointer;
+    margin-top: 15px;
 }
 .main_content{
     display: flex;
@@ -78,9 +79,17 @@ body{
     background-color: black;
     width: 390px;
 }
-.leftnav a{
+.utility{
+    margin-top: 20px;
+}
+.utility a{
     color: antiquewhite;
     text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+.search{
+    margin-top: 10px;
 }
 .container{
     background-color: antiquewhite;
