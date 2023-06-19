@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
 }
-body{
+/* body{
     background-color: antiquewhite;
     font-family: 'Ubuntu', sans-serif;
     font-family: 'Varela Round', sans-serif;
@@ -45,18 +45,49 @@ body{
 .navright{
     display: flex;
     /* justify-content: center; */
-    align-items: center;
-    margin-left: 650px;
-}
-.container{
-    min-height: 380px;
+    /* align-items: center;
+    margin-left: 650px; */
+/* } */
+/* .container{
+    min-height: 397.5px;
     background-color: black;
     color: white;
     display: flex;
     justify-content: center;
     margin: 35px 135px;
     /* margin-bottom: 10px; */
-    margin-bottom: 50px;
+    /* margin-bottom: 50px;
+    margin-top: 25px; */
+/* } */ 
+body{
+    background-color: black;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.logo{
+    height: 50px;
+    width: 95px;
+}
+.main_content{
+    display: flex;
+    min-height: 510px;
+    margin-bottom: 20px;
+}
+.leftnav{
+    background-color: black;
+    width: 390px;
+}
+.leftnav a{
+    color: antiquewhite;
+    text-decoration: none;
+}
+.container{
+    background-color: antiquewhite;
+    color: black;
+    border-radius: 15px;
+    width: 880px;
+    margin-top: 50px;
 }
 .bottom{
     background-color: black;
@@ -65,17 +96,29 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    /* margin-top: -46px; */
     
 }
 .icons{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom:-70px ;
+    /* margin-top: 48px ; */
     color: white;
     cursor: pointer;
+    position: relative;
+    z-index: 1;
+    margin-bottom: -46px;
 }
 
+.feather-skip-back:hover{
+    /* border: 2px solid white; */
+    border-radius: 10px;
+    color: black;
+    background-color: antiquewhite;
+    
+    transition: 0.5s ease-in-out;
+}
 
 #range{
     width: 500px;
