@@ -72,7 +72,7 @@ body{
 }
 .main_content{
     display: flex;
-    min-height: 510px;
+    height: 510px;
     margin-bottom: 20px;
 }
 .leftnav{
@@ -125,6 +125,11 @@ body{
     margin-bottom: -4px;
 
 }
+.songlist{
+    height: 260px;
+    width: 398px;
+    overflow: auto;
+}
 .song_img{
     height: 40px;
     width: 40px;
@@ -146,12 +151,55 @@ body{
     background-color: rgb(41, 41, 41);
 }
 .container{
-    background-color: antiquewhite;
-    color: black;
+    background-color: black;
+    color: antiquewhite;
     border-radius: 15px;
     width: 880px;
     margin-top: 50px;
+    /* background-image: url(background.png); */
+    position: relative;
 }
+.main_bg{
+    width: 880px;
+    height: 465px;
+    border-radius: 15px;
+    opacity: 0.5;
+}
+.l1{
+    position: absolute;
+    top: 36px;
+    left: 30px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 100px;
+}
+
+.l2{
+    position: absolute;
+    top: 128px;
+    left: 30px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 100px;
+}
+
+.l3{
+    position: absolute;
+    top: 220px;
+    left: 30px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 100px;
+}
+
+.l4{
+    position: absolute;
+    top: 312px;
+    left: 30px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 100px;
+}
+span{
+    color: deeppink;
+}
+
 .bottom{
     background-color: black;
     height: 100px;

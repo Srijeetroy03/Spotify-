@@ -12,6 +12,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&family=Varela+Round&display=swap"
         rel="stylesheet">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/all.css">
 
 </head>
@@ -50,6 +54,26 @@
                         <p>Kesariya</p>
                     </div>
 
+                    <div class="song">
+                        <img src="Images/Choo_lo_img.png" class="song_img" alt="" srcset="">
+                        <p>Choo Lo</p>
+                    </div>
+
+                    <div class="song">
+                        <img src="Images/Ajab_si_img.png" class="song_img" alt="" srcset="">
+                        <p>Ajab Si</p>
+                    </div>
+
+                    <div class="song">
+                        <img src="Images/kaise_tum_img.png" class="song_img" alt="" srcset="">
+                        <p>Kaise Tum</p>
+                    </div>
+
+                    <div class="song">
+                        <img src="Images/kaun_tujhe_img.png" class="song_img" alt="" srcset="">
+                        <p>Kaun Tujhe</p>
+                    </div>
+
                 </div>
 
 
@@ -58,17 +82,30 @@
 
         </div>
         <div class="container">
-            <h1></h1>
+            <img src="Images/background.png" class="main_bg" alt="" srcset="">
+            <p class="l1">WELCOME</p>
+            <p class="l2">TO THE</p>
+            <p class="l3">WORLD</p>
+            <p class="l4">OF <span>MUSIC!</span> </p>
+            
         </div>
     </div>
     
-    <div class="icons">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-skip-back"><polygon points="19 20 9 12 19 4 19 20"/><line x1="5" y1="19" x2="5" y2="5"/></svg> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play"><polygon points="5 3 19 12 5 21 5 3"/></svg> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-skip-forward"><polygon points="5 4 15 12 5 20 5 4"/><line x1="19" y1="5" x2="19" y2="19"/></svg> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    <div class="icons" id="ic">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-skip-back" id="previous"><polygon points="19 20 9 12 19 4 19 20"/><line x1="5" y1="19" x2="5" y2="5"/></svg> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        
+        <a href="#" id="pause_img"></a>
+
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke -linecap="round" stroke-linejoin="round" class="feather feather-play" id="bottom_play"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-skip-forward" id="next"><polygon points="5 4 15 12 5 20 5 4"/><line x1="19" y1="5" x2="19" y2="19"/></svg> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
     </div>
+
+
     <div class="bottom">
-        <input type="range" name="range" min="0" max="100" id="range">
+        <input type="range" name="range" min="0" max="100" value="0" id="range">
     </div>
     <script src="main.js"></script>
     
