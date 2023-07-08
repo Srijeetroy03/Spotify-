@@ -53,7 +53,7 @@ let songs=[
     'music/kaun_tujhe.mp3',
 ]
 let next = document.getElementById("next");
-let prev = document.getElementById("prev");
+let prev = document.getElementById("previous");
 next.addEventListener('click',()=>{
     if(song_index > songs.length)
         song_index = 0;
