@@ -1,75 +1,89 @@
 function clicked(){
-    location.href="main.html"
+    location.href = "home.html"
 }
+let audioElement = new Audio("music/pal.mp3")
+let bottom_play = document.getElementById("bottom_play");
+// bottom_play.addEventListener('click',()=>{
+//     if(audioElement.paused || audioElement.currentTime == 0)
+//         audioElement.play();
+//     let pause = document.createElement('img');
+//     pause.src = "pause.jpeg";
+//     let pause_img = document.getElementById('pause_img');
+//     pause_img.appendChild(pause);
+//     bottom_play.style.display = 'none';
+//     pause.style.height = '20px';
+//     pause.style.width = '20px';
+// })
 
-let audioElement=new Audio();
-let pause_img=document.getElementById('pause_img');
-let pause=document.createElement('img');
-let bottom_play=document.getElementById('bottom_play');
-let range=document.getElementById('range');
-
-
+let pause_img = document.getElementById('pause_img');
+let pause = document.createElement('img');
+let range = document.getElementById('range');
 bottom_play.addEventListener('click',()=>{
-    pause.src='pause.png';
-    audioElement.src=songs[songIndex];
-    audioElement.play()
-    pause_img.appendChild(pause)
-    bottom_play.style.display='none'
-    pause.style.display='block'
-    pause.style.height='23px'
-    pause.style.width='21px'
-    pause.style.display='flex';
-    pause.style.justifyContent='center'
-    pause.style.alignItems='center';
-})
+     audioElement.play();
+     pause.src="pause.png";
+     pause_img.appendChild(pause);
+     bottom_play.style.display = "none";
+     pause.style.display = "block";
+     pause.style.height = '22px';
+     pause.style.width = '21px';
 
+})
 pause_img.addEventListener('click',()=>{
     audioElement.pause();
-    pause.style.display='none'
-    bottom_play.style.display='block'
+    pause.style.display = 'none';
+    bottom_play.style.display = 'block';
 })
 
 audioElement.addEventListener('timeupdate',()=>{
-    let progress= parseInt((audioElement.currentTime/audioElement.duration)*100)
-    range.value=progress 
+    let progess = parseInt((audioElement.currentTime/audioElement.duration)*100);
+    range.value = progess;
 })
 
 range.addEventListener('change',()=>{
-    audioElement.currentTime= (range.value*audioElement.duration)/100
+    audioElement.currentTime = (range.value*audioElement.duration)/100;
 })
 
-let songIndex=0;
+let song_index = 0;
 let songs=[
-    'music/pal.mp3',
+    'music/Pal.mp3',
     'music/kesariya.mp3',
-    'music/Choo Lo.mp3',
+    'music/Choo lo.mp3',
     'music/Ajab_si.mp3',
     'music/kaise_mujhe.mp3',
     'music/kaun_tujhe.mp3',
 ]
-
-let next=document.getElementById('next')
-let prev=document.getElementById('previous')
+let next = document.getElementById("next");
+let prev = document.getElementById("prev");
 next.addEventListener('click',()=>{
-    if(songIndex>songs.length-1){
-        songIndex=0
-    }
+    if(song_index > songs.length)
+        song_index = 0;
     else
-    songIndex+=1;
+        song_index+=1;
 
-    audioElement.src=songs[songIndex]
-    audioElement.currentTime=0
-    audioElement.play()
+    audioElement.src = songs[song_index]
+    audioElement.currentTime = 0;
+    audioElement.play();
+    pause.src="pause.png";
+    pause_img.appendChild(pause);
+    bottom_play.style.display = "none";
+    pause.style.display = "block";
+
 })
 
 prev.addEventListener('click',()=>{
-    if(songIndex<0){
-        songIndex=songs.length-1
+    if(song_index<0){
+        song_index=songs.length-1
     }
-    else
-    songIndex-=1;
 
-    audioElement.src=songs[songIndex]
+    else
+       song_index-=1;
+
+    audioElement.src=songs[song_index]
     audioElement.currentTime=0
     audioElement.play() 
+    pause.src="pause.png";
+    pause_img.appendChild(pause);
+    bottom_play.style.display = "none";
+    pause.style.display = "block";
 })
+    
