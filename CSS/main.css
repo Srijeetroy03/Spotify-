@@ -15,12 +15,16 @@ body{
 }
 .main_content{
     display: flex;
-    height: 503px;
+    height: 500px;
     margin-bottom: 20px;
 }
 .leftnav{
     background-color: black;
     width: 390px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
 }
 .utility{
     margin-top: 20px;
@@ -104,7 +108,7 @@ body{
 }
 .main_bg{
     width: 880px;
-    height: 465px;
+    height: 462px;
     border-radius: 15px;
     opacity: 0.5;
 }
@@ -145,7 +149,7 @@ span{
 
 .bottom{
     background-color: black;
-    height: 100px;
+    height: 96px;
     color: white;
     display: flex;
     align-items: center;
@@ -163,18 +167,20 @@ span{
     position: relative;
     z-index: 1;
     margin-bottom: -46px;
+    display: none;
 }
 
-.feather-skip-back:hover{
+/* .feather-skip-back:hover{
     /* border: 2px solid white; */
-    border-radius: 10px;
-    color: black;
-    background-color: antiquewhite;
+    /* border-radius: 10px; */
+    /* color: black; */
+    /* background-color: antiquewhite; */
     
-    transition: 0.5s ease-in-out;
-}
+    /* transition: 0.5s ease-in-out; */
+/* } */ 
 
 #range{
     width: 500px;
     margin-top: 45px;
+    display: none;
 }

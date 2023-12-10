@@ -8,6 +8,7 @@ function clicked(){
 
 let audioElement = new Audio("music/pal.mp3")
 let bottom_play = document.getElementById("bottom_play");
+let ic=document.getElementById('ic');
 
 
 let pause_img = document.getElementById('pause_img');
@@ -78,6 +79,12 @@ for(let i=0;i<song.length;i++){
         // b.style.display='block';
         bottom_play.style.display = "none";
         pause.style.display = "block";
+        ic.style.display="block";
+        ic.style.display='flex';
+        ic.style.alignItems='center';
+        ic.style.justifyContent='center';
+        range.style.display='block'
+
     })
 }
 
