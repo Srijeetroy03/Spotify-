@@ -161,7 +161,7 @@ span{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 42px ;
+    /* margin-top: 42px ; */
     color: white;
     cursor: pointer;
     position: relative;
