@@ -18,12 +18,19 @@ pause.src="pause.png";
 pause.style.height = '22px';
 pause.style.width = '21px';
 
-bottom_play.addEventListener('click',()=>{
-    audioElement.play();
+// bottom_play.addEventListener('click',()=>{
+//     audioElement.play();
+//     pause_img.appendChild(pause)
+//     bottom_play.style.display = "none"
+//     pause.style.display = "block";
+// })
+
+function play_clicked(){
+    audioElement.play(); 
     pause_img.appendChild(pause)
     bottom_play.style.display = "none"
     pause.style.display = "block";
-})
+}
 
 
 pause_img.addEventListener('click',()=>{
