@@ -12,7 +12,7 @@ let ic=document.getElementById('ic');
 
 
 let pause_img = document.getElementById('pause_img');
-let pause = document.createElement('img');
+let pause = document.createElement('img');//html tag
 let range = document.getElementById('range');
 pause.src="pause.png";
 pause.style.height = '22px';
@@ -59,15 +59,6 @@ let songs=[
 ]
 
 let song=document.querySelectorAll('.song')
-// for(let k=0;k<song.length;k++){
-//             song[k].addEventListener('mouseover',()=>{
-//                 song[k].style.background='rgb(41, 41, 41)'
-//             })
-    
-//             song[k].addEventListener('mouseout',()=>{
-//                 song[k].style.background='rgb(65,64,64)'
-//             })    
-// }
 
 for(let i=0;i<song.length;i++){
     song[i].addEventListener('click',()=>{
